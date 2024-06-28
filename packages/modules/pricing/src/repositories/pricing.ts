@@ -163,6 +163,7 @@ export class PricingRepository
         pl_rules_count: "price.pl_rules_count",
         price_list_type: "price.pl_type",
         price_list_id: "price.price_list_id",
+        all_rules_count: knex.raw("price.rules_count + price.pl_rules_count"),
       })
       .join(priceSubQueryKnex.as("price"), "price.price_set_id", "ps.id")
       .leftJoin("price_rule as pr", "pr.price_id", "price.id")
@@ -171,8 +172,8 @@ export class PricingRepository
 
       .orderBy([
         { column: "price.has_price_list", order: "asc" },
+        { column: "all_rules_count", order: "desc" },
         { column: "amount", order: "asc" },
-        { column: "rules_count", order: "desc" },
       ])
 
     if (quantity) {

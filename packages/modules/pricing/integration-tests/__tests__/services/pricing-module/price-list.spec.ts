@@ -586,6 +586,63 @@ moduleIntegrationTestRunner<IPricingModuleService>({
             })
           )
         })
+
+        it("should take the later price when passing two equivalent prices twice", async () => {
+          const [created] = await service.createPriceLists([
+            {
+              title: "test",
+              description: "test",
+              starts_at: "10/10/2010",
+              ends_at: "10/20/2030",
+              prices: [
+                {
+                  amount: 400,
+                  currency_code: "EUR",
+                  price_set_id: "price-set-1",
+                  rules: {
+                    region_id: "DE",
+                  },
+                },
+                {
+                  amount: 600,
+                  currency_code: "EUR",
+                  price_set_id: "price-set-1",
+                  rules: {
+                    region_id: "DE",
+                  },
+                },
+              ],
+            },
+          ])
+
+          const [priceList] = await service.listPriceLists(
+            {
+              id: [created.id],
+            },
+            {
+              relations: ["prices", "prices.price_rules"],
+            }
+          )
+
+          expect(priceList).toEqual(
+            expect.objectContaining({
+              id: expect.any(String),
+              prices: [
+                expect.objectContaining({
+                  rules_count: 1,
+                  price_rules: [
+                    expect.objectContaining({
+                      id: expect.any(String),
+                      value: "DE",
+                    }),
+                  ],
+                  amount: 600,
+                  currency_code: "EUR",
+                }),
+              ],
+            })
+          )
+        })
       })
 
       describe("addPriceListPrices", () => {
@@ -808,6 +865,50 @@ moduleIntegrationTestRunner<IPricingModuleService>({
               ]),
               price_list_rules: [],
             })
+          )
+        })
+
+        it("should throw when adding a price that already exists", async () => {
+          const [priceSet] = await service.createPriceSets([{}])
+
+          await service.addPriceListPrices([
+            {
+              price_list_id: "price-list-1",
+              prices: [
+                {
+                  id: "test-price-id",
+                  amount: 123,
+                  currency_code: "EUR",
+                  price_set_id: priceSet.id,
+                  rules: {
+                    region_id: "test",
+                  },
+                },
+              ],
+            },
+          ])
+
+          const err = await service
+            .addPriceListPrices([
+              {
+                price_list_id: "price-list-1",
+                prices: [
+                  {
+                    id: "test-price-id",
+                    amount: 234,
+                    currency_code: "EUR",
+                    price_set_id: priceSet.id,
+                    rules: {
+                      region_id: "test",
+                    },
+                  },
+                ],
+              },
+            ])
+            .catch((e) => e)
+
+          expect(err.message).toEqual(
+            'Price with identical rules: \'[{"attribute":"region_id","value":"test"}]\' and currency_code: \'EUR\' already exists'
           )
         })
       })
