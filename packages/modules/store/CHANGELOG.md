@@ -1,5 +1,12 @@
 # @medusajs/store
 
+## 2.7.2
+
+### Patch Changes
+
+- Updated dependencies [[`b868a4ef4deb7df09d6156a907f4c883cd55a3fd`](https://github.com/medusajs/medusa/commit/b868a4ef4deb7df09d6156a907f4c883cd55a3fd)]:
+  - @medusajs/framework@2.7.2
+
 ## 2.7.1
 
 ### Patch Changes

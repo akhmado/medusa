@@ -1,5 +1,57 @@
 # Change Log
 
+## 2.7.2
+
+### Patch Changes
+
+- [#12266](https://github.com/medusajs/medusa/pull/12266) [`cb53b8a5290708b395e1cf1f1a75ec6ff518f7b7`](https://github.com/medusajs/medusa/commit/cb53b8a5290708b395e1cf1f1a75ec6ff518f7b7) Thanks [@thetutlage](https://github.com/thetutlage)! - feat: upgrade opentelemetry packages to support the latest release
+
+- Updated dependencies [[`a53d645f8aab30135baebac29f9645dd35d47632`](https://github.com/medusajs/medusa/commit/a53d645f8aab30135baebac29f9645dd35d47632), [`90c61d189806894c56bfd5686807406c800cfdeb`](https://github.com/medusajs/medusa/commit/90c61d189806894c56bfd5686807406c800cfdeb), [`89859987565b1fc872c7cd1c6d23144b97f454bc`](https://github.com/medusajs/medusa/commit/89859987565b1fc872c7cd1c6d23144b97f454bc), [`d7a273ff2def96420054f31114a46294be6ee968`](https://github.com/medusajs/medusa/commit/d7a273ff2def96420054f31114a46294be6ee968), [`b868a4ef4deb7df09d6156a907f4c883cd55a3fd`](https://github.com/medusajs/medusa/commit/b868a4ef4deb7df09d6156a907f4c883cd55a3fd)]:
+  - @medusajs/core-flows@2.7.2
+  - @medusajs/index@2.7.2
+  - @medusajs/framework@2.7.2
+  - @medusajs/link-modules@2.7.2
+  - @medusajs/pricing@2.7.2
+  - @medusajs/admin-bundler@2.7.2
+  - @medusajs/api-key@2.7.2
+  - @medusajs/auth@2.7.2
+  - @medusajs/cache-inmemory@2.7.2
+  - @medusajs/cache-redis@2.7.2
+  - @medusajs/cart@2.7.2
+  - @medusajs/currency@2.7.2
+  - @medusajs/customer@2.7.2
+  - @medusajs/event-bus-local@2.7.2
+  - @medusajs/event-bus-redis@2.7.2
+  - @medusajs/file@2.7.2
+  - @medusajs/fulfillment@2.7.2
+  - @medusajs/inventory@2.7.2
+  - @medusajs/locking@2.7.2
+  - @medusajs/notification@2.7.2
+  - @medusajs/order@2.7.2
+  - @medusajs/payment@2.7.2
+  - @medusajs/product@2.7.2
+  - @medusajs/promotion@2.7.2
+  - @medusajs/auth-emailpass@2.7.2
+  - @medusajs/auth-github@2.7.2
+  - @medusajs/auth-google@2.7.2
+  - @medusajs/file-local@2.7.2
+  - @medusajs/file-s3@2.7.2
+  - @medusajs/fulfillment-manual@2.7.2
+  - @medusajs/locking-postgres@2.7.2
+  - @medusajs/locking-redis@2.7.2
+  - @medusajs/notification-local@2.7.2
+  - @medusajs/notification-sendgrid@2.7.2
+  - @medusajs/payment-stripe@2.7.2
+  - @medusajs/region@2.7.2
+  - @medusajs/sales-channel@2.7.2
+  - @medusajs/stock-location@2.7.2
+  - @medusajs/store@2.7.2
+  - @medusajs/tax@2.7.2
+  - @medusajs/user@2.7.2
+  - @medusajs/workflow-engine-inmemory@2.7.2
+  - @medusajs/workflow-engine-redis@2.7.2
+  - @medusajs/telemetry@2.7.2
+
 ## 2.7.1
 
 ### Patch Changes

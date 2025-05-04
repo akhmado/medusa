@@ -1,5 +1,16 @@
 # @medusajs/modules-sdk
 
+## 2.7.2
+
+### Patch Changes
+
+- [#11898](https://github.com/medusajs/medusa/pull/11898) [`b868a4ef4deb7df09d6156a907f4c883cd55a3fd`](https://github.com/medusajs/medusa/commit/b868a4ef4deb7df09d6156a907f4c883cd55a3fd) Thanks [@carlos-r-l-rodrigues](https://github.com/carlos-r-l-rodrigues)! - feat(index): add filterable fields to link definition
+
+- Updated dependencies [[`a53d645f8aab30135baebac29f9645dd35d47632`](https://github.com/medusajs/medusa/commit/a53d645f8aab30135baebac29f9645dd35d47632), [`89859987565b1fc872c7cd1c6d23144b97f454bc`](https://github.com/medusajs/medusa/commit/89859987565b1fc872c7cd1c6d23144b97f454bc), [`b868a4ef4deb7df09d6156a907f4c883cd55a3fd`](https://github.com/medusajs/medusa/commit/b868a4ef4deb7df09d6156a907f4c883cd55a3fd)]:
+  - @medusajs/utils@2.7.2
+  - @medusajs/types@2.7.2
+  - @medusajs/orchestration@2.7.2
+
 ## 2.7.1
 
 ### Patch Changes

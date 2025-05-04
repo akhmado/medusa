@@ -1,5 +1,20 @@
 # @medusajs/core-flows
 
+## 2.7.2
+
+### Patch Changes
+
+- [#12338](https://github.com/medusajs/medusa/pull/12338) [`a53d645f8aab30135baebac29f9645dd35d47632`](https://github.com/medusajs/medusa/commit/a53d645f8aab30135baebac29f9645dd35d47632) Thanks [@shahednasser](https://github.com/shahednasser)! - fix(core-flows,utils): move fulfillment workflow events
+
+- [#12326](https://github.com/medusajs/medusa/pull/12326) [`90c61d189806894c56bfd5686807406c800cfdeb`](https://github.com/medusajs/medusa/commit/90c61d189806894c56bfd5686807406c800cfdeb) Thanks [@carlos-r-l-rodrigues](https://github.com/carlos-r-l-rodrigues)! - fix(core-flows): add missing remove remote links
+
+- [#12320](https://github.com/medusajs/medusa/pull/12320) [`89859987565b1fc872c7cd1c6d23144b97f454bc`](https://github.com/medusajs/medusa/commit/89859987565b1fc872c7cd1c6d23144b97f454bc) Thanks [@fPolic](https://github.com/fPolic)! - feat(core-flows,utils): add Order Edit events
+
+- [#12269](https://github.com/medusajs/medusa/pull/12269) [`d7a273ff2def96420054f31114a46294be6ee968`](https://github.com/medusajs/medusa/commit/d7a273ff2def96420054f31114a46294be6ee968) Thanks [@fPolic](https://github.com/fPolic)! - fix(core-flows): handle inventory kit items in mark-as-shipped and mark-as-delivered flows
+
+- Updated dependencies [[`b868a4ef4deb7df09d6156a907f4c883cd55a3fd`](https://github.com/medusajs/medusa/commit/b868a4ef4deb7df09d6156a907f4c883cd55a3fd)]:
+  - @medusajs/framework@2.7.2
+
 ## 2.7.1
 
 ### Patch Changes

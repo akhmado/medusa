@@ -1,5 +1,17 @@
 # @medusajs/dashboard
 
+## 2.7.2
+
+### Patch Changes
+
+- [#11877](https://github.com/medusajs/medusa/pull/11877) [`353906614625ce8cc15c7d60537db697a69e160d`](https://github.com/medusajs/medusa/commit/353906614625ce8cc15c7d60537db697a69e160d) Thanks [@AmbroziuBaban](https://github.com/AmbroziuBaban)! - fix(dashboard): Admin Global Search broken for variants
+
+- Updated dependencies [[`4f6362b1cb1b84f01cc4cd277981aae7ae5797c9`](https://github.com/medusajs/medusa/commit/4f6362b1cb1b84f01cc4cd277981aae7ae5797c9)]:
+  - @medusajs/ui@4.0.10
+  - @medusajs/js-sdk@2.7.2
+  - @medusajs/admin-shared@2.7.2
+  - @medusajs/icons@2.7.2
+
 ## 2.7.1
 
 ### Patch Changes
